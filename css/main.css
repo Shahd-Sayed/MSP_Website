@@ -34,6 +34,10 @@
     color: var(--main-text-color) !important;
 }
 
+.fa-x {
+    font-size: 20px;
+}
+
 .nav-item {
     padding-left: var(--padding-left) !important;
 }
@@ -143,11 +147,6 @@
 }
 
 .fa-search {
-    /* position: absolute;
-    top: 50%;
-    right: 220px;
-    transform: translateY(-50%);
-    color: var(--purple-accent) !important; */
     color: var(--purple-accent) !important;
     margin-left: -30px;
 }
@@ -156,29 +155,38 @@
     color: var(--purple-Accent, #7B1D80);
     text-align: center;
     font-family: Cairo;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     background-color: var(--navbar-color);
     border: 1px solid var(--purple-accent) !important;
     outline: none !important;
-    border-radius: var(--border-input) !important;
+    border-radius: var(--main-border-radius) !important;
 
 }
 
 /* End Nav */
+/* start footer */
+.rectangale {
+    padding: var(--padding-all) !important;
+    background-color: var(--purple-accent) !important;
+    width: 113px;
+    height: 81px;
+}
+
+/* start footer */
+
 
 
 /* extra small screens */
 @media only screen and (max-width: 600px) {
-    .nav-item {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+
+    .nav-item .firstLink {
+        margin-bottom: 12px !important;
     }
 
     .nav-item .firstLink,
     .nav-item .nav-link:hover {
-        padding: var(--padding-all) 79px;
+        padding: var(--padding-all) !important;
     }
 
     .dropdown-menu {
@@ -204,6 +212,17 @@
         padding-right: 128px !important;
 
     }
+
+    input {
+        margin-top: 15px !important;
+        width: 100%;
+    }
+    .fa-search{
+        margin-top: 15px;
+    }
+    .btn{
+        margin-top: 15px;
+    }
 }
 
 /* small screen */
@@ -221,7 +240,8 @@
     .nav-item a {
 
         font-size: 8px !important;
-        font-weight: 600 !important;    }
+        font-weight: 600 !important;
+    }
 
     input {
         width: 200px !important;
