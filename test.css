@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: var( --background-main-color);
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  border: var(--border);
+  /* box-shadow: 1px 2px 50px 0px rgba(255, 230, 0, 0.349); */
+}
+
+.numbers {
+  margin-top: 3vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: rgb(255, 153, 0);
+}
+
+.numbers .rect > p {
+  font-family: var(--Patua);
+  color: var(--text-secondary-color);
+
+}
+@media only screen and (max-width: 768px) {
+
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+}

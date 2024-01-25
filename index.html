@@ -1,129 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- title Of Website -->
-        <title>MSP</title>
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="images/MSP Black Logo 2.png"
-            type="image/x-icon">
-        <!-- font's Google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Castoro&family=Fredericka+the+Great&family=Inclusive+Sans&family=Lobster&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Poppins:wght@100;200;300;400;600;700;800;900&family=Princess+Sofia&family=Roboto+Condensed:wght@100;200&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Broken+Fax&family=Rubik+Lines&family=Rubik:wght@300;400;500;600;700;800;900&family=STIX+Two+Text:wght@400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
-            rel="stylesheet">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/306f44334f.js"
-            crossorigin="anonymous"></script>
-        <!-- Normalize CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <!-- Var CSS -->
-        <link rel="stylesheet" href="css/var.css">
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="css/main.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Start Nav Bar -->
-        <section class="navBar">
-            <nav class="navbar navbar-expand-md  navbar-expand-xl">
-                <div class="container">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#"><img
-                            src="images/MSP Black Logo 2.png"
-                            alt="logo"></a>
-                    <!-- toggler menu -->
-                    <button title="menu" class="navbar-toggler" type="button"
-                        data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <span><i class="fa-solid fa-bars-staggered"
-                                id="click"></i></span>
-                    </button>
 
-                    <!-- Navbar links -->
-                    <div
-                        class="collapse navbar-collapse justify-content-between"
-                        id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link firstLink" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Our committes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallary</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    id="navbardrop" data-toggle="dropdown">
-                                    About Us
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title Of Website -->
+    <title>MSP</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/MSP Black Logo 2.png" type="image/x-icon">
+    <!-- font's Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Castoro&family=Fredericka+the+Great&family=Inclusive+Sans&family=Lobster&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oxygen:wght@300;400;700&family=Poppins:wght@100;200;300;400;600;700;800;900&family=Princess+Sofia&family=Roboto+Condensed:wght@100;200&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Broken+Fax&family=Rubik+Lines&family=Rubik:wght@300;400;500;600;700;800;900&family=STIX+Two+Text:wght@400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/306f44334f.js" crossorigin="anonymous"></script>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Var CSS -->
+    <link rel="stylesheet" href="css/var.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="scroll_top"></div>
+    <!-- Start Nav Bar -->
+    <section class="navBar">
+        <nav class="navbar navbar-expand-md  navbar-expand-xl sticky-top">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#"><img src="images/MSP Black Logo 2.png" alt="logo"></a>
+                <!-- toggler menu -->
+                <button title="menu" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span><i class="fa-solid fa-bars-staggered" id="click"></i></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link firstLink" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Our committes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallary</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa-regular fa-star"></i>
+                                    <span class="info">Information About
+                                        us</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
                                 </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item"
-                                        href="#"><i
-                                            class="fa-regular fa-star"></i>
-                                        <span class="info">Information About
-                                            us</span>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                    <a class="dropdown-item" href="#"><i
-                                            class="fa-solid fa-people-group"></i>
-                                        <span class="one">our
-                                            team</span>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
-                                    <a class="dropdown-item"
-                                        href="#">
-                                        <i class="fa-solid fa-blog"></i>
+                                <a class="dropdown-item" href="#"><i class="fa-solid fa-people-group"></i>
+                                    <span class="one">our
+                                        team</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-solid fa-blog"></i>
 
-                                        <span class="two">Blog</span>
-                                        <i
-                                            class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <form class="form-inline">
-                                    <input
-                                        type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <i class="fa-solid fa-search"></i>
-                                </form>
-                            </li>
-                            <div class="nav-item">
-                                <a href="" class="nav-link btn">اللغه العربية</a>
+                                    <span class="two">Blog</span>
+                                    <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
-                        </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="form-inline">
+                                <input type="search" placeholder="Search" aria-label="Search">
+                                <i class="fa-solid fa-search"></i>
+                            </form>
+                        </li>
+                        <div class="nav-item">
+                            <a href class="nav-link btn">اللغه العربية</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- End Header -->
+    <!-- Start Section One -->
+    <section class="section_one">
+        <div class="container">
+            <div class="SectionGrid">
+                <div class="col">
+                    <p>MSP AI-Azhar University</p>
+                    <h2>Best <span>Student</span></h2>
+                    <h2> Digital Education <span>Agency</span></h2>
+                    <p>MSP (Microsoft Student Partner) is a program
+                        initiated in
+                        2001 by Microsoft to
+                        sponsor students majoring in technology-related
+                        disciplines. In late 2006, the
+                        program was expanded to fifty countries
+                        worldwide.</p>
+                    <div class="dynamic">
+                        <div class="allGrid">
+                            <div class="numbers">
+                                <h3><span>49</span><span>+</span></h3>
+                                <p>workshops</p>
+                            </div>
+                            <div class="numbers">
+                                <h3><span>7999</span><span>+</span></h3>
+                                <p>Trainees</p>
+                            </div>
+                            <div class="numbers">
+                                <h3><span>11</span><span>+</span></h3>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="numbers">
+                                <h3><span>10</span><span>+</span></h3>
+                                <p>Mega Events</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </section>
-        <!-- End Nav Bar -->
-        <!-- Start Footer -->
-        <!-- <div class="container">
-            <div class="rectangale "></div>
+                <div class="col">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
 
-        </div> <hr> -->
-        <!-- <hr> -->
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators mt-5">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
 
-        <!-- End Footer -->
+                        </ul>
 
-        <!-- Bootstrap JS -->
-        <script
-            src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
-        <script
-            src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <!-- Main JS -->
-        <script src="js/index.js"></script>
-    </body>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/Image.png" alt="image" width="40%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Image.png" width="40%" alt="image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Image.png" alt="image" width="40%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Image.png" alt="image" width="40%">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev " href="#demo" data-slide="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none">
+                                <path d="M15.5 6L9.5 12L15.5 18" stroke="#7B1D80" stroke-width="2" />
+                            </svg> </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                fill="none">
+                                <path d="M9.5 18L15.5 12L9.5 6" stroke="#FCFCFC" stroke-width="2" />
+                            </svg> </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Section One -->
+    <!-- start our committes -->
+    <section class="section_two">
+        <div class="first">
+            <hr>
+        </div>
+        <div class="container">
+            <div class="headings">
+                <h2><span>Our </span><span>Committees</span></h2>
+                <p>Enjoy the many advantages of choosing the service you want to learn and develop your skills</p>
+            </div>
+            <div class="committeeGrid">
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_118_1460)">
+                                    <path
+                                        d="M3.235 14.6161H11.3202C13.213 14.6161 14.3161 13.5379 14.3161 11.6703V3.58504C14.3161 1.7173 13.213 0.639276 11.3202 0.639276H3.235C1.35472 0.639276 0.26416 1.70477 0.26416 3.58504V11.6703C0.26416 13.5506 1.35472 14.6161 3.235 14.6161ZM19.5307 14.779H27.779C29.7344 14.779 30.8501 13.6759 30.8501 11.7705V3.4973C30.8501 1.57941 29.7344 0.476318 27.779 0.476318H19.5307C17.5878 0.476318 16.4721 1.57941 16.4721 3.4973V11.7705C16.4721 13.6759 17.5878 14.779 19.5307 14.779ZM19.5559 12.7984C18.8163 12.7984 18.4527 12.4349 18.4527 11.6828V3.57251C18.4527 2.8204 18.8163 2.45688 19.5559 2.45688H27.7538C28.5185 2.45688 28.8695 2.8204 28.8695 3.57251V11.6828C28.8695 12.4349 28.5185 12.7984 27.7538 12.7984H19.5559ZM1.21683 19.3042C0.702892 19.3042 0.26416 19.7555 0.26416 20.3195C0.26416 20.8836 0.702892 21.3223 1.21683 21.3223H5.2657V19.3042H1.21683ZM7.44682 23.328C9.10147 23.328 10.4553 21.9742 10.4553 20.3195C10.4553 18.6523 9.10147 17.2986 7.44682 17.2986C5.79218 17.2986 4.43838 18.6523 4.43838 20.3195C4.43838 21.9742 5.79218 23.328 7.44682 23.328ZM7.44682 21.7862C6.61951 21.7862 5.98021 21.1343 5.98021 20.307C5.98021 19.4796 6.61951 18.8404 7.44682 18.8404C8.26161 18.8404 8.91345 19.4796 8.91345 20.307C8.91345 21.1343 8.26161 21.7862 7.44682 21.7862ZM9.43992 19.3042V21.3223H29.8346C30.3988 21.3223 30.8501 20.8836 30.8501 20.3195C30.8501 19.7555 30.3988 19.3042 29.8346 19.3042H9.43992Z"
+                                        fill="#7B1D80" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_118_1460">
+                                        <rect width="30.5859" height="23.328" fill="white"
+                                            transform="translate(0.26416)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            UX-UI Design
+                        </h3>
+                        <p>
+                            Designers who focus on creating comfortable, easy-to-use user experiences and good design.
+                        </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.0463 8.35137C10.5149 8.82 10.5149 9.5798 10.0463 10.0484L4.09481 15.9999L10.0463 21.9514C10.5149 22.42 10.5149 23.1798 10.0463 23.6484C9.57765 24.1171 8.81786 24.1171 8.34923 23.6484L1.54923 16.8484C1.0806 16.3798 1.0806 15.62 1.54923 15.1514L8.34923 8.35137C8.81786 7.88274 9.57765 7.88274 10.0463 8.35137ZM21.9492 8.35137C22.4179 7.88274 23.1777 7.88274 23.6463 8.35137L30.4463 15.1514C30.9149 15.62 30.9149 16.3798 30.4463 16.8484L23.6463 23.6484C23.1777 24.1171 22.4179 24.1171 21.9492 23.6484C21.4806 23.1798 21.4806 22.42 21.9492 21.9514L27.9007 15.9999L21.9492 10.0484C21.4806 9.5798 21.4806 8.82 21.9492 8.35137Z"
+                                    fill="#7B1D80" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.2016 3.21735C18.8547 3.32995 19.2929 3.95069 19.1803 4.60379L15.1803 27.8038C15.0677 28.4569 14.447 28.8951 13.7939 28.7825C13.1408 28.6699 12.7026 28.0491 12.8152 27.396L16.8152 4.19601C16.9278 3.54291 17.5485 3.10475 18.2016 3.21735Z"
+                                    fill="#7B1D80" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Front-End
+                        </h3>
+                        <p>
+                            Developers who write the code that appears on the user interface, whether the website,
+                            dashboard, and others. </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.33105 8C3.33105 5.79086 5.12192 4 7.33105 4H25.3311C27.5402 4 29.3311 5.79086 29.3311 8V24C29.3311 26.2091 27.5402 28 25.3311 28H7.33105C5.12192 28 3.33105 26.2091 3.33105 24V8ZM8.62395 9.29289C9.01447 8.90237 9.64764 8.90237 10.0382 9.29289L13.0382 12.2929C13.4287 12.6834 13.4287 13.3166 13.0382 13.7071L10.0382 16.7071C9.64764 17.0976 9.01447 17.0976 8.62395 16.7071C8.23342 16.3166 8.23342 15.6834 8.62395 15.2929L10.9168 13L8.62395 10.7071C8.23342 10.3166 8.23342 9.68342 8.62395 9.29289ZM14.3311 15C13.7788 15 13.3311 15.4477 13.3311 16C13.3311 16.5523 13.7788 17 14.3311 17H18.3311C18.8833 17 19.3311 16.5523 19.3311 16C19.3311 15.4477 18.8833 15 18.3311 15H14.3311Z"
+                                    fill="#7B1D80" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Back-End </h3>
+                        <p>
+                            Developers who write code that runs on a web server and manage databases. </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="31" viewBox="0 0 23 31"
+                                fill="none">
+                                <path
+                                    d="M3.94517 30.3169H18.9049C21.1281 30.3169 22.6148 28.8973 22.6148 26.7812V3.69193C22.6148 1.57586 21.1281 0.142822 18.9049 0.142822H3.94517C1.72196 0.142822 0.235352 1.57586 0.235352 3.69193V26.7812C0.235352 28.8973 1.72196 30.3169 3.94517 30.3169ZM4.21303 28.1607C3.06125 28.1607 2.3916 27.5178 2.3916 26.4196V4.05354C2.3916 2.95533 3.06125 2.29907 4.21303 2.29907H18.6372C19.7756 2.29907 20.4585 2.95533 20.4585 4.05354V26.4196C20.4585 27.5178 19.7756 28.1607 18.6372 28.1607H4.21303ZM6.28893 12.4777H16.5747C17.2845 12.4777 17.7666 12.0089 17.7666 11.2589V8.36603C17.7666 7.61603 17.2845 7.14729 16.5747 7.14729H6.28893C5.5791 7.14729 5.09696 7.61603 5.09696 8.36603V11.2589C5.09696 12.0089 5.5791 12.4777 6.28893 12.4777ZM6.28893 23.2857H16.5747C17.2845 23.2857 17.7666 22.8035 17.7666 22.0669V19.1607C17.7666 18.4241 17.2845 17.9419 16.5747 17.9419H6.28893C5.5791 17.9419 5.09696 18.4241 5.09696 19.1607V22.0669C5.09696 22.8035 5.5791 23.2857 6.28893 23.2857Z"
+                                    fill="#7B1D80" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Flutter </h3>
+                        <p>
+                            Developers who write mobile apps using Flutter, a toolkit for developing native,
+                            cross-platform mobile apps </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="24" viewBox="0 0 31 24" <svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <g clip-path="url(#clip0_146_406)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.3879 29.5328C19.6167 29.5328 18.9928 28.9057 18.9928 28.1305C18.9928 27.3552 19.6167 26.7297 20.3879 26.7297C21.1591 26.7297 21.7832 27.3552 21.7832 28.1305C21.7832 28.9057 21.1591 29.5328 20.3879 29.5328ZM16.1127 32C24.2375 32 23.7304 28.4586 23.7304 28.4586L23.7208 24.7898H15.9688V23.6883H26.7992C26.7992 23.6883 31.9976 24.2818 31.9976 16.0422C31.9976 7.80254 27.4616 8.09297 27.4616 8.09297H24.7527V11.918C24.7527 11.918 24.8984 16.4773 20.2888 16.4773H12.5992C12.5992 16.4773 8.27915 16.4088 8.27915 20.6758V27.7297C8.27915 27.7297 7.62314 32 16.1127 32ZM11.6087 2.46719C12.3799 2.46719 13.0023 3.0943 13.0023 3.86953C13.0023 4.64476 12.3799 5.27031 11.6087 5.27031C10.8375 5.27031 10.2136 4.64476 10.2136 3.86953C10.2136 3.0943 10.8375 2.46719 11.6087 2.46719ZM15.8824 0C7.75917 0 8.26636 3.54141 8.26636 3.54141L8.27598 7.21016H16.028V8.31172H5.19595C5.19595 8.31172 -0.00244141 7.71818 -0.00244141 15.9578C-0.00244141 24.1975 4.53516 23.907 4.53516 23.907H7.24238V20.082C7.24238 20.082 7.09676 15.5227 11.708 15.5227H19.3959C19.3959 15.5227 23.716 15.5912 23.716 11.3242V4.27031C23.716 4.27031 24.372 0 15.8824 0Z"
+                                        fill="#7B1C80" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_146_406">
+                                        <rect width="32" height="32" fill="white" transform="translate(-0.00244141)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            python
+                        </h3>
+                        <p>
+                            covers Fundamentals of python programming ,applying OOP concepts and the way to how to think
+                            and solve.... </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <div class="sections">
+                    <div class="icon_width">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M27.9999 30.0001H21.9999C21.4697 29.9995 20.9613 29.7887 20.5863 29.4137C20.2114 29.0387 20.0005 28.5303 19.9999 28.0001V22.0001C20.0005 21.4698 20.2114 20.9614 20.5863 20.5864C20.9613 20.2115 21.4697 20.0006 21.9999 20.0001H27.9999C28.5302 20.0006 29.0386 20.2115 29.4136 20.5864C29.7885 20.9614 29.9994 21.4698 29.9999 22.0001V28.0001C29.9994 28.5303 29.7885 29.0387 29.4136 29.4137C29.0386 29.7887 28.5302 29.9995 27.9999 30.0001ZM21.9999 22.0001V28.0001H27.9999V22.0001H21.9999ZM17.9999 26.0001H11.9999C11.2045 25.9993 10.4419 25.683 9.8795 25.1205C9.31707 24.5581 9.00074 23.7955 8.99995 23.0001V19.0001H10.9999V23.0001C11.0002 23.2652 11.1057 23.5194 11.2931 23.7069C11.4806 23.8944 11.7348 23.9998 11.9999 24.0001H17.9999V26.0001ZM25.9999 18.0001H23.9999V15.0001C23.9997 14.7349 23.8942 14.4807 23.7068 14.2933C23.5193 14.1058 23.2651 14.0003 22.9999 14.0001H17.9999V12.0001H22.9999C23.7954 12.0009 24.558 12.3172 25.1204 12.8796C25.6828 13.4421 25.9992 14.2047 25.9999 15.0001V18.0001ZM14.9999 18.0001C14.8256 18.0002 14.6543 17.9547 14.5029 17.8681L9.99995 15.2881L5.49695 17.8681C5.32806 17.9648 5.13462 18.0101 4.94035 17.9985C4.74608 17.9869 4.55942 17.9188 4.40326 17.8027C4.2471 17.6866 4.12822 17.5274 4.0612 17.3447C3.99417 17.1619 3.98192 16.9636 4.02595 16.7741L5.08695 12.2021L2.26895 9.18207C2.14578 9.04992 2.06071 8.88687 2.02278 8.71024C1.98485 8.53362 1.99547 8.35001 2.05352 8.17894C2.11157 8.00787 2.21488 7.85572 2.35247 7.73865C2.49006 7.62159 2.65679 7.54398 2.83495 7.51407L7.03495 6.81207L9.10095 2.56207C9.18221 2.39524 9.3083 2.25432 9.46509 2.15506C9.62189 2.05581 9.80321 2.00214 9.98877 2.00006C10.1743 1.99799 10.3568 2.04759 10.5158 2.14331C10.6748 2.23903 10.804 2.3771 10.8889 2.54207L13.0929 6.81207L17.1699 7.51407C17.3477 7.54471 17.5138 7.62285 17.6508 7.74021C17.7878 7.85758 17.8904 8.0098 17.9479 8.18076C18.0054 8.35171 18.0156 8.53504 17.9774 8.71131C17.9392 8.88759 17.8541 9.05025 17.7309 9.18207L14.9129 12.2021L15.9729 16.7741C16.0069 16.9206 16.0074 17.0729 15.9744 17.2197C15.9414 17.3665 15.8756 17.5039 15.7821 17.6217C15.6886 17.7396 15.5697 17.8348 15.4343 17.9003C15.2988 17.9658 15.1504 17.9999 14.9999 18.0001ZM9.99995 13.0001C9.99995 13.0001 10.3429 13.1801 10.4969 13.2691L13.5069 14.9931L12.7229 11.6161L15.0049 9.17107L11.7719 8.61407L10.0269 5.23207L8.38295 8.61407L5.00195 9.17907L7.27595 11.6161L6.49195 14.9931L9.50195 13.2691C9.65795 13.1801 9.99995 13.0001 9.99995 13.0001Z"
+                                    fill="#7B1D80" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h3>
+                            Graphic Design </h3>
+                        <p>
+                            Creating designs using Adobe Photoshop and Adobe Illustrator for logos, illustrarions,
+                            manipulations and others </p>
+                        <a href=""><span>Learn more</span>
+                            <span>
+                                <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                            </span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button_width">
+                <button class="btn-sections"><a href="http://" target="_blank">see more</a></button>
+
+            </div>
+        </div>
+    </section>
+    <!-- End our committes -->
+    <!-- start our features -->
+    <section class="section_two">
+        <div class="first">
+            <hr>
+        </div>
+        <div class="container">
+            <div class="headings">
+                <h2><span>Check our World Class </span><span>Features</span></h2>
+                <p>Enjoy the many benefits With a specialized team of trainers with extensive experience at MSP AI-Azhar
+                    University, we aim to lay a strong foundation for your future.</p>
+            </div>
+            <div class="featuresGrid">
+
+            </div>
+        </div>
+    </section>
+    <!-- End our featurea -->
+
+    <!-- Bootstrap JS -->
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Main JS -->
+    <script src="js/index.js"></script>
+</body>
+
 </html>
