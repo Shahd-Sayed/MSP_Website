@@ -48,9 +48,6 @@ $(document).ready(function () {
 //   nav.classList.toggle("sticky", this.window.scrollY > 0);
 // });
 
-document.querySelector(".dropdown-item").addEventListener("mouseover", function () {
-  document.querySelector(".fa-arrow-right");
-});
 
 
 

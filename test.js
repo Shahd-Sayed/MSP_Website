@@ -29,3 +29,15 @@ let a = 0;
     }
   });
 
+  @media only screen and (max-width: 768px) {
+
+    .numbers .rect {
+      width: 10rem;
+      height: 8rem;
+    }
+    .numbers .rect h1 {
+      font-size: 2rem;
+    }
+  
+  }
+

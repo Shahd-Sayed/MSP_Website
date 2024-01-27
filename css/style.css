@@ -19,6 +19,12 @@
     --padding-top-bottom: 38px
 }
 
+.banner {
+    background-color: var(--purple-accent) !important;
+}
+
+
+
 .section_one {
     background-color: var(--main-bg-nav-color) !important;
     padding-top: var(--padding-top-bottom) !important;
@@ -240,12 +246,14 @@
 .committeeGrid .sections .text a {
     text-decoration: none !important;
 }
-.button_width{
+
+.button_width {
     display: flex;
     justify-content: center;
     padding-top: var(--padding-top-bottom);
 }
-.btn-sections{
+
+.btn-sections {
     padding: 12px 24px;
     background-color: var(--purple-accent) !important;
     border-radius: var(--second-border-radius);
@@ -253,12 +261,108 @@
     border: var(--border) !important;
     width: 300px !important;
 }
-.btn-sections a,a:hover{
+
+.btn-sections a,
+.btn-sections a:hover {
     color: var(--section-background-color) !important;
     text-decoration: none !important;
-font-size: 18px;
-font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+
+}
+
+.item2 img {
+    width: 417.333px;
+    height: 508px;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.item6 {
+    grid-area: left;
+}
+
+.item7 {
+    grid-area: row;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header menu menu main main'
+        'right right  menu menu footer footer'
+        'left left  menu menu row row';
+    gap: 25px;
+    align-items: center !important;
+
+}
+
+.grid {
+    /* display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px; */
+    display: flex;
+    align-items: center;  /* Vertically center items */
+    justify-content: center;  /* Horizontally center items */
+    gap: 10px;
+
+}
+
+.grid .number {
+    border-radius: 50%;
+    border: 3px solid var(--main-background-color);
+    background: var(--purple-accent) !important;
+    padding: 10px 20px !important;
+    font-size: 1.5rem !important;
+    color: var(--section-background-color);
+    /* align-self: start; */
+
+}
+
+.design{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.grid .design h4 {
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.grid .design p {
+    color: var(--secondary-text-color) !important;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.096px;
+    bottom: 0;
+}
+.grid .design p,.grid .design h4{
+    display: inline-block !important;
+}
+
+
+
+
 @media screen and (max-width:600px) {
     .section_one .SectionGrid {
         grid-template-columns: repeat(1, 1fr) !important;
@@ -276,12 +380,84 @@ font-weight: 600;
     .headings h2 {
         font-size: 32px;
     }
+
     .committeeGrid {
         grid-template-columns: repeat(1, 1fr);
-    
+
     }
-    .btn-sections{
+
+    .btn-sections {
         width: 100% !important;
     }
 
+    .grid-container {
+        grid-template-areas:
+            'menu menu'
+            'header header'
+            'right right'
+            'left left'
+            'main main'
+            'footer footer'
+            'row row';
+    }
+
+    .item2 img {
+        width: 100%;
+    }
+
+    .grid .number {
+        text-align: left;
+    }
+
+}
+
+@media (min-width:760px) and (max-width:940px) {
+    .section_one .SectionGrid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+
+    .allGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .headings h2 {
+        font-size: 32px;
+    }
+
+    .committeeGrid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .btn-sections {
+        width: 100% !important;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            'menu menu'
+            'header header'
+            'right right'
+            'left left'
+            'main main'
+            'footer footer'
+            'row row';
+    }
+
+    .item2 img {
+        width: 100%;
+    }
+
+    .grid .number {
+        text-align: left;
+    }
+    .committeeGrid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
 }

@@ -1,171 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Books</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .item1 {
+        grid-area: header;
+    }
 
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous" />
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="test.css">
-    </head>
+    .item2 {
+        grid-area: menu;
 
-    <body>
-        <div class="container-fluid text-center">
-            <div
-                class="numbers d-flex flex-md-row flex-wrap justify-content-center">
-                <div class="rect">
-                    <h1>20</h1>
-                    <p>Happy Client</p>
-                </div>
-                <div class="rect">
-                    <h1>6784</h1>
-                    <p>rov</p>
-                </div>
-                <div class="rect">
-                    <h1>9152</h1>
-                    <p>Total Projects</p>
+    }
+
+    .item2 img {
+        width: 417.333px;
+        height: 508px;
+    }
+
+    .item3 {
+        grid-area: main;
+    }
+
+    .item4 {
+        grid-area: right;
+    }
+
+    .item5 {
+        grid-area: footer;
+    }
+
+    .item6 {
+        grid-area: left;
+    }
+
+    .item7 {
+        grid-area: row;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header menu menu main main'
+            'right right  menu menu footer footer'
+            'left left  menu menu row row';
+        gap: 25px;
+        align-items: center !important;
+
+    }
+
+    .grid {
+        /* display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .grid .number {
+        border-radius: 50%;
+        border: 3px solid var(--main-background-color);
+        background: var(--purple-accent) !important;
+        padding: 10px 20px !important;
+        font-size: 1.5rem !important;
+        color: var(--section-background-color);
+        /* align-self: start; */
+
+    }
+
+    .design {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .grid .design h4 {
+        color: var(--main-text-color);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .grid .design p {
+        color: var(--secondary-text-color) !important;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.096px;
+        bottom: 0;
+    }
+
+    .grid .design p,
+    .grid .design h4 {
+        display: inline-block !important;
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="sectionOne item1">
+            <div class="grid">
+                <div class="number">1</div>
+                <div class="design">
+                    <h4>Team Spirit and Unity</h4>
+                    <p>Foster team collaboration, creating a valued, motivated, and connected environment.</p>
                 </div>
             </div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque id
-            tempore, at earum magni minus accusantium eius quaerat non
-            voluptatem labore tempora facilis vel, hic, obcaecati illum quidem!
-            Asperiores neque distinctio non iste impedit animi quod dignissimos
-            repellat ad, quo, enim nihil. Commodi eius nobis recusandae dolore
-            laborum excepturi, debitis necessitatibus nesciunt cumque inventore.
-            Quod dolorum exercitationem magnam doloribus veritatis sit
-            voluptatibus facilis minus dolorem quibusdam cupiditate ad corrupti
-            nostrum perferendis molestiae illo neque, consequuntur ea sequi,
-            reprehenderit a? Molestiae eius dolorum possimus neque esse commodi
-            harum minima aperiam eveniet aspernatur, ad, fuga quidem aliquid
-            repellendus deserunt? Iusto laboriosam culpa, harum sunt, at illo
-            illum quam laudantium aperiam atque nemo incidunt recusandae dicta
-            suscipit eius. Beatae recusandae cupiditate voluptas perferendis
-            vitae? Aliquid tempora aut quod aspernatur doloremque minus, nobis
-            accusantium consequatur expedita neque voluptatem ad a ut nihil
-            suscipit sunt cum dignissimos quia! Aut vitae dolorum provident
-            deleniti et esse, obcaecati voluptas error, tenetur repellendus quia
-            dolorem quod omnis placeat explicabo incidunt suscipit debitis
-            eveniet? Atque repellat rerum temporibus distinctio, vero asperiores
-            illum dolorum, repudiandae, doloribus ut possimus omnis. Quas
-            doloremque velit quae blanditiis, a dignissimos soluta alias! Soluta
-            nihil eaque natus corporis eius veniam reiciendis repellat delectus
-            quas sint illum doloribus facere officiis, ullam tempora
-            consequuntur ea ipsam similique aperiam deleniti earum magni
-            possimus laboriosam iure. Repellat cum nesciunt nihil inventore unde
-            fugiat, nisi obcaecati tempore eligendi consequuntur velit excepturi
-            impedit minus nostrum, officiis deserunt. Eligendi deserunt iure
-            excepturi alias aliquam ab incidunt? Cum laboriosam ducimus
-            temporibus ullam natus fugit sapiente itaque. Saepe id ipsum eius
-            autem eaque corrupti tempore, repudiandae sint accusamus voluptas
-            similique fuga nesciunt excepturi blanditiis impedit aut doloremque
-            eos mollitia non voluptatibus officia. Fugiat, placeat facere eum
-            minima similique quis aut, quia dignissimos a veniam exercitationem
-            voluptates cupiditate officia doloribus laboriosam esse
-            reprehenderit soluta alias harum error, nostrum quidem. Illo nemo
-            adipisci beatae quibusdam, mollitia dolor sunt placeat ipsum?
-            Aperiam illum possimus cumque nihil quasi earum aspernatur iste in
-            minus. Est repellendus nostrum cupiditate autem minus saepe odio
-            eaque itaque atque praesentium. Consectetur illo labore non
-            doloremque voluptates quis, architecto consequatur! Alias molestias
-            earum veritatis. Sit labore soluta rem voluptatem quam adipisci
-            dolores doloribus error consequatur reprehenderit eveniet
-            exercitationem, possimus fugit sapiente, obcaecati in distinctio
-            illo! Unde qui commodi quos exercitationem illo quaerat voluptate,
-            excepturi sed ipsa quidem magnam placeat. Iusto porro, ullam impedit
-            suscipit accusantium recusandae tempore quia et consectetur
-            consequuntur accusamus ipsa obcaecati sequi autem odio. Inventore
-            odit laboriosam distinctio ut totam, ipsa a eligendi voluptatem aut?
-            Iure odit asperiores soluta beatae, tempore culpa sint fugit cum
-            repudiandae voluptatibus sit totam sapiente a, voluptatem esse ipsum
-            minima dolores suscipit nostrum debitis natus dolorem ad! Aspernatur
-            blanditiis voluptate non, accusamus sint dolorum porro, hic error
-            nam maxime autem mollitia facilis pariatur, laudantium impedit
-            itaque alias corporis tenetur culpa ut distinctio magni suscipit
-            laboriosam dignissimos. Beatae fuga eius consectetur, dolor omnis,
-            tenetur facilis rem et itaque necessitatibus officia eveniet! Rem,
-            facere dolorum! Cum facere ad illum sed, in quaerat iste, quasi
-            ducimus aliquid maxime blanditiis sapiente? Consequatur vero, itaque
-            repellendus quisquam similique repudiandae excepturi adipisci, neque
-            architecto porro maiores? Earum vitae alias velit mollitia
-            voluptatum placeat dolore quaerat. Quos architecto magni iusto esse
-            voluptas vitae repellat illum repudiandae pariatur earum at natus
-            nulla facilis itaque fuga vel, maxime modi non. Dolore in vero
-            voluptates excepturi magnam perferendis optio minima esse nesciunt
-            atque velit iure quis, quaerat corrupti distinctio debitis facilis,
-            temporibus error praesentium aut! Ducimus rem qui labore
-            praesentium, recusandae minus, consequatur, vitae alias blanditiis
-            ab quis! Inventore asperiores culpa repudiandae necessitatibus unde
-            ad ea, enim ipsam! Tenetur tempore harum molestiae illo debitis
-            reiciendis, quae excepturi. Iusto fugit, quis mollitia
-            necessitatibus nulla ea quibusdam fugiat repellat totam quia nam
-            deleniti voluptates! Vitae aliquid totam perspiciatis quia labore
-            maxime quo obcaecati earum soluta amet animi quis perferendis
-            reprehenderit eaque, omnis expedita sunt vero sapiente deleniti
-            velit. Mollitia molestiae fugiat totam repudiandae doloremque
-            dolores, illo corporis, vitae optio, voluptatum architecto
-            distinctio officia voluptatem? Quaerat fuga animi expedita aliquid
-            dolorum delectus dolores excepturi vero ipsam nihil aliquam, libero
-            soluta tempora facilis eveniet eligendi, quod culpa praesentium
-            beatae eaque ut dicta. Ipsum optio vero natus commodi consequuntur
-            soluta quae aliquid ipsa dolorem vel adipisci excepturi, quisquam
-            officiis atque voluptatem deserunt assumenda molestias? Similique
-            sed perferendis laborum deleniti enim debitis nesciunt a dolor omnis
-            recusandae eos rerum voluptate, voluptatum libero inventore rem
-            suscipit illo deserunt cumque earum ipsam facilis? Corporis est
-            doloremque deserunt libero quis vel voluptate fugit laudantium
-            aliquam eligendi fuga harum quisquam labore consequatur soluta at,
-            laborum alias iure blanditiis assumenda nihil sapiente deleniti sed.
-            Aperiam modi recusandae exercitationem fugit beatae quod dolore
-            maiores at molestiae tempora alias nobis distinctio autem mollitia
-            in eaque, praesentium, nulla sed atque culpa ab dolores voluptatum.
-            Tempore, nesciunt natus. Voluptatem libero necessitatibus sequi
-            facere dicta asperiores sapiente corrupti a, incidunt beatae quod
-            rerum aliquid, quam voluptatum tempore qui nulla quas. Hic autem
-            repellat deserunt quod, reiciendis voluptatem deleniti error beatae
-            voluptatibus corrupti recusandae aspernatur fugit earum distinctio
-            eius nam sint eum, necessitatibus tempore, esse reprehenderit!
-            Assumenda beatae illo reiciendis vero! Perferendis et enim ea, quo a
-            dolores voluptatem repudiandae nihil, nesciunt voluptates
-            consequatur. Ad labore, neque velit ex nostrum at recusandae
-            perferendis? Ullam magni quos qui facilis, illum animi provident
-            nesciunt tempora consectetur cupiditate quas numquam dolor, officiis
-            voluptates labore minus facere ipsa fugit. Adipisci rerum
-            voluptates, laboriosam deserunt illo quaerat veritatis dignissimos
-            harum. Fugit reiciendis, in molestias nam incidunt ex deleniti odio
-            perferendis exercitationem sint atque quam explicabo soluta esse
-            laudantium consectetur beatae nesciunt velit iure. Beatae odio aut
-            facilis inventore saepe, unde dicta eos repellat ipsa non cum,
-            quidem dolor? Veniam accusamus reprehenderit ex totam doloribus?
-            Necessitatibus natus sint cum! Dolor suscipit saepe, cum dolorem
-            exercitationem dolore qui dolores perferendis doloribus? Officia
-            nulla tenetur porro sit repudiandae ipsa provident quisquam. Rerum,
-            soluta corporis id perferendis inventore illum exercitationem ullam
-            voluptatum quaerat explicabo necessitatibus maxime, aliquid quis
-            sint accusamus, voluptatem earum perspiciatis! Sapiente esse tempore
-            sit dolores iusto modi nam rerum excepturi placeat voluptatem. Quos
-            quasi excepturi cumque, quibusdam optio aliquid!
         </div>
+        <div class="sectionOne item2"><img src="images/Image.png" alt=""></div>
+        <div class="sectionOne item3">
+            <div class="grid">
+                <div class="design">
+                    <h4>Continuous Improvement </h4>
+                    <p>Help team members to acquire new skills and strive for personal and collective
+                        improvement.</p>
+                </div>
+                <div class="number">4</div>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="test.js"></script>
-    </body>
+            </div>
+        </div>
+        <div class="sectionOne item4">
+            <div class="grid">
+                <div class="number">2</div>
+                <div class="design">
+                    <h4>Expand out Branding</h4>
+                    <p>Extend our impact beyond the workshops by engaging in branding activities using our
+                        social media.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionOne item5">
+            <div class="grid">
+                <div class="design">
+                    <h4>Strive for Innovation</h4>
+                    <p>Promote innovation and creativity, inspiring unconventional thinking for positive change.
+                    </p>
+                </div>
+                <div class="number">5</div>
+
+            </div>
+        </div>
+        <div class="sectionOne item6">
+            <div class="grid">
+                <div class="number">3</div>
+                <div class="design">
+                    <h4>Sharing & Inspiration</h4>
+                    <p>Proactively share knowledge in workshops and events, fostering expertise and vision.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionOne item7">
+            <div class="grid">
+                <div class="design">
+                    <h4>Sustain Excellence </h4>
+                    <p>Sustain high standards and performance for continued success and competitiveness at Al
+                        Azhar University.</p>
+                </div>
+                <div class="number">6</div>
+
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
