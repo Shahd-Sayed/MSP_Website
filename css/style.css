@@ -321,8 +321,10 @@
     grid-template-columns: auto 1fr;
     gap: 10px; */
     display: flex;
-    align-items: center;  /* Vertically center items */
-    justify-content: center;  /* Horizontally center items */
+    align-items: center;
+    /* Vertically center items */
+    justify-content: center;
+    /* Horizontally center items */
     gap: 10px;
 
 }
@@ -338,7 +340,7 @@
 
 }
 
-.design{
+.design {
     display: flex;
     flex-direction: column !important;
 }
@@ -356,7 +358,9 @@
     letter-spacing: -0.096px;
     bottom: 0;
 }
-.grid .design p,.grid .design h4{
+
+.grid .design p,
+.grid .design h4 {
     display: inline-block !important;
 }
 
@@ -456,6 +460,7 @@
     .grid .number {
         text-align: left;
     }
+
     .committeeGrid {
         grid-template-columns: repeat(2, 1fr);
 

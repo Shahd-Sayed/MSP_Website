@@ -31,27 +31,3 @@ body {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
-
-.scroll_top {
-    height: 100%;
-    width: 6px;
-    background-color: var(--purple-accent);
-    scale: 1 0;
-    position: fixed;
-    z-index: 9999;
-    animation: scroll-moving linear;
-    animation-timeline: scroll();
-    box-shadow: 0px 0px 20px 0px var(--purple-accent);
-    right: 0;
-    transform-origin:  top;
-}
-
-@keyframes scroll-moving {
-    to {
-        scale: 1;
-    }
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
